@@ -12,13 +12,11 @@ const Home = async () => {
   console.log("🚀 ~ Home ~ data:", data)
   return (
     <>
-      <ApolloClientProvider>
       <div className="flex flex-row justify-center items-center w-screen h-screen">
         <Button>
           Fun fact!
         </Button>
       </div>
-      </ApolloClientProvider>
     </>
   );
 }
