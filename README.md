@@ -46,10 +46,15 @@ npm run dev
     ```bash
     npm run dev
     ```
+## Production URL
+
+The application is also available online:
+[Chuck Norris Frontend](https://chuck-norris-frontend-sable.vercel.app/).
 
 ## Contact
 
 For questions or suggestions, contact me [Ariel Oliveira de Mello](https://github.com/arielmell0).
+
 
 ---
 
