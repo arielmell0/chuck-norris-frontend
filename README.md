@@ -2,6 +2,11 @@
 
 This project displays random facts about Chuck Norris. The application makes requests to a [gateway](https://github.com/arielmell0/chuck-norris-gateway-graphql) specifically designed to fetch the facts.
 
+## Overview Video (PT-BR 🇧🇷)
+https://github.com/arielmell0/chuck-norris-frontend/assets/69513559/a766152f-28b4-499b-b1df-f18f4e4e8357
+
+
+
 ## How to Start the Project
 
 To start the project locally, execute the following command:
