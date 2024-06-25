@@ -1,21 +1,13 @@
 "use client"
 
-import ApolloClientProvider from "@/components/ApolloClientProvider";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ButtonLoading } from "@/components/ui/button-loading";
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select";
 import client from "@/lib/apolloClient";
-import { gql } from "@apollo/client";
 import { useEffect, useState } from "react";
+import { GET_CATEGORIES, GET_FUN_FACTS, GET_RANDOM_FACT_BY_CATEGORY } from "./graphql/querys";
 
-const GET_FUN_FACTS = gql(`{ getRandomFact }`)
-const GET_CATEGORIES = gql(`{ getCategories }`)
-const GET_RANDOM_FACT_BY_CATEGORY = gql`
-  query getRandomFactByCategory($category: String!) {
-    getRandomFactByCategory(category: $category)
-  }
-`;
+
 
 const Home = () => {
   const [funFact, setFunFact] = useState('')
