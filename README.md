@@ -1,56 +1,56 @@
-# Projeto Chuck Norris
+# Chuck Norris Project
 
-Este é um projeto para exibir fatos aleatórios sobre Chuck Norris. A aplicação faz requisições para um [gateway](https://github.com/arielmell0/chuck-norris-gateway-graphql) específico para obter os fatos.
+This project displays random facts about Chuck Norris. The application makes requests to a [gateway](https://github.com/arielmell0/chuck-norris-gateway-graphql) specifically designed to fetch the facts.
 
-## Como iniciar o projeto?
+## How to Start the Project
 
-Para iniciar o projeto localmente, execute o seguinte comando:
+To start the project locally, execute the following command:
 
 ```bash
 npm run dev
 ```
 
-## Funcionalidades
+## Features
 
-- **Botão de geração de fatos:** Um botão que, ao ser clicado, gera fatos aleatórios sobre Chuck Norris. As requisições são feitas para um gateway GraphQL.
-- **Seleção de categorias:** Um dropdown (select) com uma lista de categorias de fatos. Ao selecionar uma categoria e clicar no botão de gerar fatos, ele irá gerar apenas fatos daquela categoria.
+- **Fact Generation Button:** A button that, when clicked, generates random facts about Chuck Norris. The requests are made to a GraphQL gateway.
+- **Category Selection:** A dropdown (select) with a list of fact categories. By selecting a category and clicking the generate facts button, it will generate facts only from that category.
 
 ## Stack
 
-- **Next.js:** Framework React para desenvolvimento de aplicações web.
-- **shadcn/ui:** Biblioteca de componentes de interface do usuário.
-- **Tailwind CSS:** Framework de CSS para estilização.
+- **Next.js:** React framework for web application development.
+- **shadcn/ui:** UI component library.
+- **Tailwind CSS:** CSS framework for styling.
 
-## Imagem do Projeto
+## Project Image
 
-![Imagem do Projeto](https://github.com/arielmell0/chuck-norris-frontend/assets/69513559/48c9c55c-40ec-4e0e-8b78-1b0b62acf296)
+![Project Image](https://github.com/arielmell0/chuck-norris-frontend/assets/69513559/48c9c55c-40ec-4e0e-8b78-1b0b62acf296)
 
-## Configuração e Execução
+## Setup and Execution
 
-1. Clone o repositório:
+1. Clone the repository:
     ```bash
     git clone https://github.com/arielmell0/chuck-norris-frontend.git
     ```
 
-2. Navegue até o diretório do projeto:
+2. Navigate to the project directory:
     ```bash
     cd chuck-norris-frontend
     ```
 
-3. Instale as dependências:
+3. Install dependencies:
     ```bash
     npm install
     ```
 
-4. Inicie a aplicação:
+4. Start the application:
     ```bash
     npm run dev
     ```
 
-## Contato
+## Contact
 
-Para perguntas ou sugestões, entre em contato comigo [Ariel Oliveira de Mello](https://github.com/arielmell0).
+For questions or suggestions, contact me [Ariel Oliveira de Mello](https://github.com/arielmell0).
 
 ---
 
-Espero que esse projeto forneça ideias de arquitetura/implementação de um front end utilizando GraphQL. 🚀
+I hope this project provides ideas for architecture/implementation of a front end using GraphQL. 🚀
