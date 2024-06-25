@@ -14,7 +14,7 @@ const GET_CATEGORIES = gql(`{ getCategories }`)
 const GET_RANDOM_FACT_BY_CATEGORY = gql`
   query getRandomFactByCategory($category: String!) {
     getRandomFactByCategory(category: $category)
-  }˝
+  }
 `;
 
 const Home = () => {
@@ -67,6 +67,7 @@ const Home = () => {
 
   return (
     <>
+      <link rel="icon" href="/favicon.ico" sizes="any" />
       <div className="flex flex-col justify-center items-center w-screen h-screen">
         <div className="flex flex-col justify-center items-center gap-4">
           <div className="px-10 mb-4 text-center">{funFact}</div>
