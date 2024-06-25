@@ -47,24 +47,10 @@ npm run dev
     npm run dev
     ```
 
-## Estrutura do Projeto
-
-- **pages/**: Contém as páginas da aplicação.
-- **components/**: Componentes reutilizáveis utilizados nas páginas.
-- **styles/**: Arquivos de estilo, incluindo configurações do Tailwind CSS.
-
-## Contribuições
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests no repositório.
-
-## Licença
-
-Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
 ## Contato
 
-Para perguntas ou sugestões, entre em contato com [Ariel Mello](https://github.com/arielmell0).
+Para perguntas ou sugestões, entre em contato comigo [Ariel Oliveira de Mello](https://github.com/arielmell0).
 
 ---
 
-Esperamos que você goste do projeto! 🚀
+Espero que esse projeto forneça ideias de arquitetura/implementação de um front end utilizando GraphQL. 🚀
