@@ -2,13 +2,24 @@ import client from "@/lib/apolloClient"
 import { useEffect, useState } from "react"
 import { GET_CATEGORIES, GET_FUN_FACTS, GET_RANDOM_FACT_BY_CATEGORY } from "../graphql/querys"
 
-const useRandomFact = () => {
-  const [funFact, setFunFact] = useState('')
-  const [loadingFunFact, setLoadingFunFact] = useState(true)
+type FunFact = string;
+type Category = string;
 
-  const [categories, setCategories] = useState([])
-  const [selectedCategory, setSelectedCategory] = useState<string | undefined>('all categories')
-  const handleSelectedCategory = (value: string) => setSelectedCategory(value)
+interface UseRandomFactReturn {
+  fetchRandomFact: () => Promise<void>;
+  funFact: FunFact;
+  loadingFunFact: boolean;
+  categories: Category[];
+  handleSelectedCategory: (value: string) => void;
+}
+
+const useRandomFact = (): UseRandomFactReturn => {
+  const [funFact, setFunFact] = useState<FunFact>('');
+  const [loadingFunFact, setLoadingFunFact] = useState<boolean>(true);
+  const [categories, setCategories] = useState<Category[]>([]);
+  const [selectedCategory, setSelectedCategory] = useState<string | undefined>('all categories');
+
+  const handleSelectedCategory = (value: string) => setSelectedCategory(value);
 
   const fetchRandomFact = async () => {
     setLoadingFunFact(true);
@@ -50,9 +61,9 @@ const useRandomFact = () => {
     }
     fetchCategories();
     fetchRandomFact();
-  }, [])
+  }, []);
 
-  return { fetchRandomFact, funFact, loadingFunFact, categories, handleSelectedCategory }
+  return { fetchRandomFact, funFact, loadingFunFact, categories, handleSelectedCategory };
 }
 
-export default useRandomFact
+export default useRandomFact;
